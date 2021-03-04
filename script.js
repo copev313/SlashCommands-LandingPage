@@ -42,30 +42,30 @@ window.onload = function() {
                             subName: "Get those song lyrics out of your head",
                             img: "images/songwriter.png",
                             alt: "lyrics icon",
-                            desc: "",
+                            desc: ". . . ",
                             subDesc: "",
                             statusActive: 0, statusTesting: 0, statusDev: 0, statusFuture: 1,
-                            lastUpdated: ""
+                            lastUpdated: "-"
                         },
 
                         {   name: "/jokester",
                             subName: "Knock knock...",
                             img: "images/clown.png",
                             alt: "clown icon",
-                            desc: "",
+                            desc: ". . . ",
                             subDesc: "",
                             statusActive: 0, statusTesting: 0, statusDev: 0, statusFuture: 1,
-                            lastUpdated: ""
+                            lastUpdated: "-"
                         },
 
                         {   name: "/mockdata",
                             subName: "Mock your data right to it's face",
                             img: "images/statistics.png",
                             alt: "statistics icon",
-                            desc: "",
+                            desc: ". . . ",
                             subDesc: "",
                             statusActive: 0, statusTesting: 0, statusDev: 0, statusFuture: 1,
-                            lastUpdated: ""
+                            lastUpdated: "-"
                         },
 
                         {   name: "/roll",
@@ -80,12 +80,22 @@ window.onload = function() {
 
                         {   name: "/shorty",
                             subName: "Cut your URLs down to size",
-                            img: "images/",
-                            alt: "xkcd ico",
-                            desc: "",
+                            img: "images/website.png",
+                            alt: "xkcd icon",
+                            desc: ". . . ",
                             subDesc: "",
                             statusActive: 0, statusTesting: 0, statusDev: 0, statusFuture: 1,
-                            lastUpdated: ""
+                            lastUpdated: "-"
+                        },
+
+                        {   name: "/wordy",
+                            subName: "A reference to the English language at your fingertips",
+                            img: "images/book.png",
+                            alt: "book icon",
+                            desc: ". . . ",
+                            subDesc: "",
+                            statusActive: 0, statusTesting: 0, statusDev: 0, statusFuture: 1,
+                            lastUpdated: "-"
                         },
 
                         {   name: "/xkcd",
