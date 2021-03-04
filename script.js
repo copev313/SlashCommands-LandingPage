@@ -74,7 +74,7 @@ window.onload = function() {
                             alt: "dice icon",
                             desc: "Randomly generates a number to simulate a dice roll.",
                             subDesc: "Rolls a 6-sided die by default. Add arguments to advance your rolls (i.e. '/roll 3d7' will roll three 7-sided dice).",
-                            statusActive: 0, statusTesting: 0, statusDev: 1, statusFuture: 0,
+                            statusActive: 0, statusTesting: 1, statusDev: 0, statusFuture: 0,
                             lastUpdated: "February 19, 2021"
                         },
 
