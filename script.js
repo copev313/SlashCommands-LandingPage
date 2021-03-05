@@ -52,10 +52,10 @@ window.onload = function() {
                             subName: "Knock knock...",
                             img: "images/clown.png",
                             alt: "clown icon",
-                            desc: ". . . ",
-                            subDesc: "",
-                            statusActive: 0, statusTesting: 0, statusDev: 0, statusFuture: 1,
-                            lastUpdated: "-"
+                            desc: "You provide the slash, I provide the humor",
+                            subDesc: "Will generate a joke on demand.",
+                            statusActive: 0, statusTesting: 0, statusDev: 1, statusFuture: 0,
+                            lastUpdated: "March 5, 2021"
                         },
 
                         {   name: "/mockdata",
@@ -82,10 +82,10 @@ window.onload = function() {
                             subName: "Cut your URLs down to size",
                             img: "images/website.png",
                             alt: "xkcd icon",
-                            desc: ". . . ",
-                            subDesc: "",
-                            statusActive: 0, statusTesting: 0, statusDev: 0, statusFuture: 1,
-                            lastUpdated: "-"
+                            desc: "Shortens the given URL.",
+                            subDesc: "Takes a URL address as an argument and returns the shortened URL as a link.",
+                            statusActive: 0, statusTesting: 1, statusDev: 0, statusFuture: 1,
+                            lastUpdated: "March 5, 2021"
                         },
 
                         {   name: "/wordy",
