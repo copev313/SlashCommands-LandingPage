@@ -7,15 +7,15 @@
 
 window.onload = function() {
 
-    // Grab the inline template (script element)
+    // Grab the inline template (script element):
     const columnTemplate = document.getElementById("columnTemplate").innerHTML;
     const rowTemplate = document.getElementById("rowsTemplate").innerHTML;
 
-    // Compile the template
+    // Compile the template:
     const compiled_header = Handlebars.compile(columnTemplate);
     const compiled_row = Handlebars.compile(rowTemplate);
 
-    // Datastore
+    // Datastore:
     const columnData = { cols: [ "Command Name", "Description", "Status", "Last Updated" ]};
     const rowsData = {
             datalist: [ {   name: "/APOD",
@@ -35,7 +35,7 @@ window.onload = function() {
                             desc: "Returns a response card with a random pupper pic.",
                             subDesc: "The card will have the name of the dog breed and the cuteness.",
                             statusActive: 1, statusTesting: 0, statusDev: 0, statusFuture: 0,
-                            lastUpdated: "February 19, 2021"
+                            lastUpdated: "May 4, 2021"
                         },
 
                         {   name: "/genius",
@@ -45,27 +45,17 @@ window.onload = function() {
                             desc: ". . . ",
                             subDesc: "",
                             statusActive: 0, statusTesting: 0, statusDev: 0, statusFuture: 1,
-                            lastUpdated: "-"
+                            lastUpdated: ""
                         },
 
                         {   name: "/jokester",
                             subName: "Knock knock...",
                             img: "images/clown.png",
                             alt: "clown icon",
-                            desc: "You provide the slash, I provide the humor",
-                            subDesc: "Will generate a joke on demand.",
-                            statusActive: 0, statusTesting: 0, statusDev: 1, statusFuture: 0,
+                            desc: "You provide the slash, I provide the humor.",
+                            subDesc: "Generates a joke on command.",
+                            statusActive: 1, statusTesting: 0, statusDev: 0, statusFuture: 0,
                             lastUpdated: "March 5, 2021"
-                        },
-
-                        {   name: "/mockdata",
-                            subName: "Mock your data right to it's face",
-                            img: "images/statistics.png",
-                            alt: "statistics icon",
-                            desc: ". . . ",
-                            subDesc: "",
-                            statusActive: 0, statusTesting: 0, statusDev: 0, statusFuture: 1,
-                            lastUpdated: "-"
                         },
 
                         {   name: "/roll",
@@ -74,7 +64,7 @@ window.onload = function() {
                             alt: "dice icon",
                             desc: "Randomly generates a number to simulate a dice roll.",
                             subDesc: "Rolls a 6-sided die by default. Add arguments to advance your rolls (i.e. '/roll 3d7' will roll three 7-sided dice).",
-                            statusActive: 0, statusTesting: 1, statusDev: 0, statusFuture: 0,
+                            statusActive: 0, statusTesting: 0, statusDev: 1, statusFuture: 0,
                             lastUpdated: "February 19, 2021"
                         },
 
@@ -84,7 +74,7 @@ window.onload = function() {
                             alt: "xkcd icon",
                             desc: "Shortens the given URL.",
                             subDesc: "Takes a URL address as an argument and returns the shortened URL as a link.",
-                            statusActive: 0, statusTesting: 1, statusDev: 0, statusFuture: 1,
+                            statusActive: 1, statusTesting: 0, statusDev: 0, statusFuture: 0,
                             lastUpdated: "March 5, 2021"
                         },
 
@@ -95,7 +85,7 @@ window.onload = function() {
                             desc: ". . . ",
                             subDesc: "",
                             statusActive: 0, statusTesting: 0, statusDev: 0, statusFuture: 1,
-                            lastUpdated: "-"
+                            lastUpdated: ""
                         },
 
                         {   name: "/xkcd",
@@ -123,7 +113,7 @@ window.onload = function() {
                         */
     ]};
 
-    // Pass data JSON into compiled templates
+    // Pass data JSON into compiled templates:
     const columnHTML = compiled_header(columnData);
     const rowsHTML = compiled_row(rowsData);
 
@@ -131,7 +121,7 @@ window.onload = function() {
     let headersList = document.getElementById("headersList");
     let rowsList = document.getElementById("rowsList");
 
-    // Overwrite the contents of rows with the renderer HTML
+    // Overwrite the contents of rows with the renderer HTML:
     headersList.innerHTML = columnHTML;
     rowsList.innerHTML = rowsHTML;
 }

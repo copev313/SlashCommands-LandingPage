@@ -14,30 +14,34 @@
 
     <body class="bg-gray-100">
 
+        <!-- PAGE TITLE & DESCRIPTION -->
         <div class="container m-2 p-1 mb-8">
-            <h1 class="text-left text-4xl align-middle underline font-semibold font-sans mb-8">
-                Welcome to the Slash Command Google Chat Bot!
+            <h1 class="text-left text-3xl align-middle underline font-semibold font-sans mb-8">
+                Welcome to the Slash Commands Dev Site!
             </h1>
             <p>
-                See the bot's script come together on <a class="text-blue-400" href="https://github.com/copev313/Slash-Commands" target="_blank">GitHub</a>.
+                See the bot come together on <a class="text-blue-400" href="https://github.com/copev313/Slash-Commands" target="_blank">GitHub</a>.
                 You can check out the source code for this site <a class="text-blue-400" href="https://github.com/copev313/SlashCommands-LandingPage" target="_blank">here</a>.
             </p>
         </div>
 
+        <!-- PAGE BODY -->
         <div class="flex flex-col mr-2 ml-2 mb-3">
             <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
                 <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
                     <div class="shadow overflow-hidden border-b border-gray-300 sm:rounded-lg">
+
+                        <!-- TABLE -->
                         <table class="min-w-full divide-y divide-gray-300">
 
-                            <!-- Header Row -->
+                        <!-- Table Header Row -->
                             <thead class="bg-gray-50">
                                 <!-- Column Headers Element -->
                                 <tr id="headersList"></tr>
                                 <!-- Column Headers Templating Script -->
-                                <script id="columnTemplate" type="text/x-handlebars-template">
+                                <script id="columnTemplate"  type="text/x-handlebars-template">
                                     {{#each cols}}
-                                    <th scope="col" class="headersList px-4 py-2 text-left text-sm font-medium text-gray-500 uppercase tracking-wider">
+                                    <th scope="col"  class="headersList px-4 py-2 text-left text-sm font-medium text-gray-500 uppercase tracking-wider">
                                         {{this}}
                                     </th>
                                     {{/each}}
@@ -47,7 +51,7 @@
                             <!-- Table Body -->
                             <tbody id="rowsList" class="bg-white divide-y divide-gray-200">
                                     <!-- Row Templating Script -->
-                                    <script id="rowsTemplate" type="text/x-handlebars-template">
+                                    <script id="rowsTemplate"  type="text/x-handlebars-template">
                                         {{#each datalist}}
                                         <tr>
                                             <td class="px-3 py-4 whitespace-nowrap">
@@ -98,10 +102,10 @@
                                         </tr>
                                         {{/each}}
                                     </script>
-                                    <!-- END Row Templating Script -->
+                                <!-- END Row Templating Script -->
                             </tbody>
-
                         </table>
+                    <!-- END TABLE -->
 
                     </div>
                 </div>
@@ -109,30 +113,29 @@
         </div>
     </body>
 
-    <footer class="min-w-full text-xs">
+    <!-- PAGE FOOTER -->
+    <footer class="absolute bottom-2 min-w-full text-xs">
         <hr>
             <div class="flex">
                 <!-- Created by -->
                 <div class="flex-1 w-1/4">
-                    <p class="ml-4 p-2">
-                        Created by -- E.Cope  👾
-                    </p>
+                    <p class="ml-4 p-2">Created by -- E.Cope  👾</p>
                 </div>
 
                 <!-- Icon attributes -->
                 <div class="flex-1 w-1/2">
                     <p class="align-center p-2">
                         Icons made by 
-                        <a class="text-purple-500" href="https://www.flaticon.com/authors/vectors-market"  target="_blank" title="Vectors Market">Vectors Market</a> and
-                        <a class="text-purple-500" href="https://www.flaticon.com/authors/freepik"  target="_blank" title="Freepik">Freepik</a> from
-                        <a class="text-purple-500" href="https://www.flaticon.com/"  target="_blank" title="Flaticon">www.flaticon.com</a>.
+                        <a class="text-purple-500"  target="_blank"  href="https://www.flaticon.com/authors/vectors-market"  title="Vectors Market">Vectors Market</a> and
+                        <a class="text-purple-500"  target="_blank"  href="https://www.flaticon.com/authors/freepik"         title="Freepik">Freepik</a> from
+                        <a class="text-purple-500"  target="_blank"  href="https://www.flaticon.com/"                        title="Flaticon">www.flaticon.com</a>.
                     </p>
                 </div>
 
                 <!-- Last updated -->
                 <div class="flex-1 w-1/4">
                     <p class="mr-4 p-2 text-right font-normal">
-                        📅 Last updated -- March 2021
+                        📅 Last updated -- May 2021
                     </p>
                 </div>
             </div>
